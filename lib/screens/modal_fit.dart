@@ -240,7 +240,7 @@ class _ChangeLangState extends State<ChangeLang> {
                 lang = 'English';
               });
               await sp.setString('langValue', langCodes[lang]);
-              Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => MyHomePage()));
+              Navigator.of(context).pop();
             },
           ),
           ListTile(
